@@ -1,0 +1,49 @@
+.table {
+  &__header {
+    font-weight: 800;
+    &--item {
+    }
+  }
+  &__body {
+    &--item {
+      transition: background-color 0.1s ease;
+      &:nth-child(even) {
+        background-color: darken(#fff, 4%);
+      }
+      &:hover {
+        background-color: darken(#fff, 7%);
+      }
+    }
+  }
+  &__button {
+    background-color: #ccc;
+    border-radius: 4px;
+    padding: 7px 25px;
+    font-size: 0.9em;
+    color: #fff;
+    transition: background-color 0.1s ease;
+
+    &--copy {
+      background-color: #419641;
+      &:hover {
+        background-color: lighten(#419641, 7%);
+      }
+    }
+    &--remove {
+      background-color: #e38d13;
+      &:hover {
+        background-color: lighten(#e38d13, 7%);
+      }
+    }
+  }
+
+  &__row {
+    display: grid;
+    border-top: 1px darken(#fff, 10%) solid;
+    padding: 10px 0;
+  }
+  &__col {
+    text-align: center;
+    font-size: 1em;
+  }
+}

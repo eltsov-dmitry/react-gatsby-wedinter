@@ -1,0 +1,68 @@
+.timer {
+  position: relative;
+  height: 80vh;
+  min-height: 580px;
+  &__content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  &__title {
+    font-family: Trajan;
+  }
+  &__component {
+  }
+  &__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    &--item {
+      position: absolute;
+    }
+    &--l {
+      width: 440px;
+      left: 0;
+      bottom: 0;
+    }
+    &--r {
+      width: 440px;
+      right: 0;
+      top: 0;
+    }
+    @media (max-width: 992px) {
+      &--l,
+      &--r {
+        width: 350px;
+      }
+    }
+  }
+
+  &__squares {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    &--item {
+      position: absolute;
+      width: calc(100vh - 15px);
+      height: calc(100vh - 15px);
+      border: 15px #fff solid;
+    }
+    &--item-1 {
+      transform: rotate(45deg) translate(84px, -30px);
+    }
+    &--item-2 {
+      transform: rotate(45deg) translate(95px, -90px);
+      opacity: 0.3;
+    }
+  }
+}

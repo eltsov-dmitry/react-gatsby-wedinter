@@ -1,0 +1,31 @@
+$successColor: #7b96b2;
+$failureColor: #323232;
+
+.ui-button {
+  min-width: 233px;
+  height: 41px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.85em;
+  border-radius: 4px;
+  transition: background-color 0.25s ease;
+  @media (max-width: 450px) {
+    font-size: 1em;
+  }
+
+  &.success {
+    background-color: $successColor;
+    &:hover {
+      background-color: darken($successColor, 10%);
+    }
+  }
+  &.failure {
+    background-color: $failureColor;
+    &:hover {
+      background-color: darken($failureColor, 10%);
+    }
+  }
+}

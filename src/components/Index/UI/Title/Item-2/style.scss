@@ -1,0 +1,16 @@
+.title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 5em;
+  margin: 0;
+  z-index: 1;
+  @media (max-width: 450px) {
+    font-size: 4em;
+  }
+  &__label {
+    font-family: Caravan;
+  }
+}

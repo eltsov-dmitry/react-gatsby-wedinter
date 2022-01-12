@@ -1,0 +1,42 @@
+.contacts {
+  padding-bottom: 30px;
+  &__content {
+  }
+  &__description {
+    text-align: center;
+    margin: 10px 0;
+    padding: 0 20px;
+  }
+  &__items {
+    margin-top: 20px;
+  }
+  &__item {
+    text-align: center;
+    font-size: 1.1em;
+    &--row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    &--icon {
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+    &--link {
+      display: flex;
+      text-decoration: none;
+      color: inherit;
+    }
+    &--position {
+      font-weight: 600;
+    }
+    &--name {
+      margin-right: 10px;
+      font-weight: 600;
+    }
+    &--phone {
+    }
+  }
+}

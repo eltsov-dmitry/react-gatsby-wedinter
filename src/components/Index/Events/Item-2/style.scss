@@ -1,0 +1,69 @@
+$accentColor: #7b96b2;
+
+.event {
+  &__cards {
+    max-width: 1060px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 0 20px;
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__card {
+    max-width: 300px;
+    text-align: center;
+    border: 1px #e6e6e6 solid;
+    padding: 40px 30px;
+    margin: 20px;
+
+    @media (max-width: 600px) {
+      padding: 30px 20px;
+    }
+
+    &--top {
+      position: relative;
+      display: inline-block;
+      font-family: Trajan;
+      height: 60px;
+    }
+    &--middle {
+      margin: 30px 0;
+    }
+    &--bottom {
+    }
+
+    &--number {
+      position: absolute;
+      font-size: 5em;
+      top: 50%;
+      transform: scaleY(0.9) translateY(-50%);
+      opacity: 0.1;
+      color: $accentColor;
+    }
+    &--title {
+      font-size: 1.5em;
+      line-height: 100%;
+    }
+    &--time {
+      color: $accentColor;
+      font-family: Anticva;
+      font-size: 2em;
+    }
+    &--place {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      text-align: left;
+      margin: 10px 0;
+    }
+    &--placeicon {
+      color: $accentColor;
+    }
+    &--placename {
+      padding-left: 10px;
+      line-height: 140%;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.flip-custom {
+  font-size: 2.7em;
+  font-family: inherit;
+  @media (max-width: 600px) {
+    font-size: 2.2em;
+  }
+  &__items {
+    position: relative;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 600px) {
+      margin: 0 5px;
+    }
+    &:after{
+      content: ":";
+      position: absolute;
+      right: -17px;
+      color: #6d6d6d;
+      z-index: 1;
+      @media (max-width: 600px) {
+        right: -10px;
+      }
+    }
+    &:last-child:after{
+      content: '';
+    }
+  }
+  &__item {
+    font-weight: 200;
+  }
+  &__labels {
+    margin-top: 20px;
+    font-size: 0.3em;
+  }
+}
+
+.tick-flip-panel{
+  background-color: #6d6d6d;
+}
